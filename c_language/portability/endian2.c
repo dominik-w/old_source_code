@@ -7,13 +7,13 @@ int main() {
   int byte_order = v[0] * 1000 + v[1] * 100 + v[2] * 10 + v[3];
 
   if (byte_order == 4321) {
-    printf("Porz퉐ek big-endian (4321)\n");
+    printf("big-endian (4321)\n");
   } else if (byte_order == 1234) {
-    printf("Porz퉐ek little-endian (1234)\n");
+    printf("little-endian (1234)\n");
   } else if (byte_order == 3412) {
-    printf("Porz퉐ek PDP (3412)\n");
+    printf("PDP (3412)\n");
   } else {
-    printf("Inny porz퉐ek (%d)\n", byte_order);
+    printf("Other (%d)\n", byte_order);
   }
   
   getch(); 
